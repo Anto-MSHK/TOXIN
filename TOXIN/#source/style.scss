@@ -1,0 +1,23 @@
+@import "null_style.scss";
+@import "fonts.scss";
+
+@import "header.scss";
+
+// header - font-family: 'Montserrat';
+body{
+background: #E5E5E5;
+}
+
+.wrapper {
+	width: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	display:flex;
+	flex-direction:column;
+}
+
+.container{
+	max-width: 1940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
