@@ -2,6 +2,7 @@
 @import "fonts.scss";
 
 @import "header.scss";
+@import "main.scss";
 
 // header - font-family: 'Montserrat';
 body{
@@ -9,15 +10,17 @@ background: #E5E5E5;
 }
 
 .wrapper {
-	width: 100%;
-	min-width: 100%;
+	max-width: 1440px; //добавляем отступ 20px
+	// height: ;
 	overflow: hidden;
 	display:flex;
 	flex-direction:column;
+	margin: 0 auto;
 }
 
 .container{
-	max-width: 1940px;
+	max-width: 1180px; //добавляем отступ 20px
+	min-width: 320px;
 	margin: 0 auto;
 	padding: 0 10px;
 }

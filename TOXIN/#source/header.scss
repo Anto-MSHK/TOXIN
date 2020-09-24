@@ -5,11 +5,13 @@
 	&__container {
 		display: flex;
 		align-items: center;
+
 	}
 	&__logo {
 		margin: 15px 0px;
 	}
 	&__menu {
+
 	}
 	&__accaunt {}
 }
@@ -47,6 +49,7 @@
 	}
 
 	&__body {
+
 	}
 
 	&__link {
@@ -84,6 +87,7 @@
 }
 .accaunt {
 	font-family: 'Montserrat';
+	font-size: 0px;
 	&__come {
 		width: 87px;
 		height: 34px;
@@ -123,9 +127,11 @@
 	&__register {
 		width: 196px;
 		height: 34px;
-		left: 1104px;
+
 		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 		border-radius: 22px;
+
+		padding: 0 -0.34px;
 
 		font-style: normal;
 		font-weight: bold;
@@ -138,7 +144,7 @@
 			display: none;
 	}
 	}
-	&__accaunt{
+	&__accaunt-icon{
 		img {
 			display: none;
 		}
@@ -154,7 +160,7 @@
 		}
 	}
 }
-	&__accaunt:before{
+	&__accaunt-icon:before{
 		@media (max-width: 925px) {
 		content: '';
 		display: inline-block;
@@ -176,12 +182,12 @@
 	}
 	}
 
-	.menu__list a.active{
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 700;
-		color: #1F2041;
-	}
+	// .menu__list a.active{
+	// 	font-family: 'Montserrat';
+	// 	font-style: normal;
+	// 	font-weight: 700;
+	// 	color: #1F2041;
+	// }
 
 
 /////////////////////////////////////////////
@@ -189,14 +195,15 @@
 // Адаптив
 
 	@media (max-width: 655px){
-		// body.lock {
-		// 	overflow: hidden;
-		// }
+		body.lock {
+			overflow: hidden;
+		}
 
 		.header__burder-conteiner{
 		flex: 1 1 auto;
 		display: flex;
 		justify-content:flex-end;
+
 		}
 		.header__burger{
 			display: block;
@@ -238,17 +245,20 @@
 			width: 100%;
 			height: 100%;
 			background: rgb(188,156,255);
-			background: linear-gradient(180deg, rgba(188,156,255,0.9) 0%, rgba(229,229,229,0.9) 100%);
+			background: linear-gradient(180deg, rgba(188,156,255,1) 0%, rgba(229,229,229,0.9) 100%);
 			z-index: -1;
 			padding: 90px 20px 20px 20px;
 			opacity: 0.1;
 			transition: all 0.3s ease 0s;
-			// overflow: auto;
+			overflow: auto;
+			z-index: -1;
+
 		}
 
 		.header__menu.active{
 			top: 0;
 			opacity: 1;
+
 		}
 
 		.menu__list{
@@ -262,7 +272,6 @@
 			// color: #fff;
 			font-size: 22px;
 		}
-
 
 
 		.header__burger.active span{

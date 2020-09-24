@@ -14,4 +14,11 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Bold.eot');
+	src: local('☺'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
 
