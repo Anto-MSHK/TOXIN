@@ -1,0 +1,68 @@
+@import "../components/null_style";
+@import "../components/fonts";
+
+@import "../components/header/header";
+@import "../components/footer/footer";
+@import "../components/buttons/buttons";
+@import "../components/search-block/search-block";
+@import "../components/field/field";
+
+// @import "main.scss";
+
+// header - font-family: 'Montserrat';
+body{
+	background: #E5E5E5;
+}
+
+.wrapper {
+	max-width: 1920px; //добавляем отступ 20px
+	// height: ;
+	overflow: hidden;
+	display:flex;
+	flex-direction:column;
+	margin: 0 auto;
+}
+
+.container{
+
+	max-width: 1180px; //добавляем отступ 20px
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.index{
+	background: url("img/PAGES/landing page/main_background.png") no-repeat 50%/cover;
+	padding: 70px 0 369px 0;
+	&__container{
+		position: relative;
+	}
+}
+
+.stimulus{
+	display:none;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: right;
+	position: absolute;
+	bottom: 1.6429rem;
+	right: -0.4286rem;
+	width: 297px;
+
+
+	color: rgba(31, 32, 65, 0.75);
+}
+
+
+// Адаптив (на 655px)
+
+	@media (max-width: 655px){
+		.index{
+			padding:10px 0 10% 0;
+		}
+}
+

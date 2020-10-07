@@ -1,0 +1,11 @@
+mixin button({text, theme, size, href = "#"} = "")
+	case theme
+		when "gradient"
+			button(class = "but button-gradient" href=href)=text
+		when "frame"
+			button(class = "but button-frame" href=href)=text
+		when "arrow"
+			button(class = "but button-arrow" href=href)=text
+		when "combined"
+			button(class = "but button-combined" href=href)=text
+				img(src="img/INTERFACE/accaunt.svg")

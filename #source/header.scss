@@ -14,7 +14,64 @@
 
 	}
 	&__accaunt {}
-}
+
+	// &__site-navi {
+	// flex: 1 1 auto;
+
+	// &__item {
+	// 	justify-content: flex-end;
+	// 	display: flex;
+	// 	align-self:center;
+	// 	li{
+	// 	margin: 0px 10px;
+	// 	a{
+	// 	font-size: 14px;
+	// 	line-height: 17px;
+	// 	color: rgba(31, 32, 65, 0.5);
+
+	// 	font-family: 'Montserrat';
+	// 	font-style: normal;
+	// 	font-weight: normal;
+	// 	}
+	// 	// &:last-child{
+	// 	// 	margin: 0px 20px 0px 10px;
+	// 	// }
+	// 	}
+	// }
+
+// 	&__link {
+		
+// 		// margin: 0 10px;
+// 	}
+
+
+// 	&__link-agree {
+// 		@extend .menu__link;
+// 	}
+
+// 	&__link-agree:after{
+// 		content: '';
+
+// 		display: inline-block;
+// 		background: url("../img/INTERFACE/expand_more.svg") center center no-repeat;
+// 		width: 24px;
+// 		height: 9px;
+// 	}
+
+
+// 	&__link-services{
+// 		@extend .menu__link;
+// 	}
+
+// 	&__link-services:after{
+// 	content: '';
+// 	display: inline-block;
+// 	background: url("../img/INTERFACE/expand_more.svg") bottom center no-repeat;
+// 	width: 24px;
+// 	height: 9px;
+// 	}
+// }
+
 .logo {
 	display: flex;
 	&__image {
@@ -24,67 +81,7 @@
 	margin: auto;
 	}
 }
-.menu {
-	flex: 1 1 auto;
 
-	&__list {
-		justify-content: flex-end;
-		display: flex;
-		align-self:center;
-		li{
-		margin: 0px 10px;
-		a{
-		font-size: 14px;
-		line-height: 17px;
-		color: rgba(31, 32, 65, 0.5);
-
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: normal;
-		}
-		// &:last-child{
-		// 	margin: 0px 20px 0px 10px;
-		// }
-		}
-	}
-
-	&__body {
-
-	}
-
-	&__link {
-		
-		// margin: 0 10px;
-	}
-
-
-	&__link-agree {
-		@extend .menu__link;
-	}
-
-	&__link-agree:after{
-		content: '';
-
-		display: inline-block;
-		background: url("../img/INTERFACE/expand_more.svg") center center no-repeat;
-		width: 24px;
-		height: 9px;
-	}
-
-
-	&__link-services{
-		@extend .menu__link;
-	}
-
-	&__link-services:after{
-	content: '';
-	display: inline-block;
-	background: url("../img/INTERFACE/expand_more.svg") bottom center no-repeat;
-	width: 24px;
-	height: 9px;
-	}
-
-}
 .accaunt {
 	font-family: 'Montserrat';
 	font-size: 0px;
@@ -189,7 +186,7 @@
 	// 	color: #1F2041;
 	// }
 
-
+}
 /////////////////////////////////////////////
 
 // Адаптив

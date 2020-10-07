@@ -1,0 +1,16 @@
+mixin field({theme, text, classname, value, placefolder, href} = "")
+	case theme
+		when "dropdown-width"
+			div.field
+				label(class="field__label")
+				div.field__title= text
+				div.field__input.field__input-sub
+					span= value
+				//- input.field__input(value=value autocomplete="off" placeholder=placeholder name=name type=type)
+		when "dropdown-arrow"
+			div.field
+				label(class="field__label")
+				div.field__input
+					input.input(value=value autocomplete="off" placeholder=placeholder name=name type=type)
+					a(href= href)
+						img.but__field(src= "../../../img/INTERFACE/arrow_forward_black.svg")

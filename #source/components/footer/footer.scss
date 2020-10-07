@@ -1,0 +1,145 @@
+.footer {
+	background: #FFFFFF;
+	box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	&__container {
+	}
+	&__panels {
+	}
+
+
+	&__bottom{
+		background: #FFFFFF;
+		box-shadow: 0px 1px 3px rgba(31, 32, 65, 1);
+	}
+	&__bottom-container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__requisites{
+		margin: 26px 0;
+		color: rgba(31, 32, 65, 0.75);
+	}
+	&__social{
+
+	}
+	&__link{
+		margin-right: 20px;
+
+	}
+	&__link:last-child{
+		margin-right: 0;
+	}
+}
+
+.panel {
+	width: 100%;
+	margin: 100px auto;
+		display: flex;
+		align-items: flex-start;
+	&__about-panel {
+		margin-right: 40px;
+		width: 260px;
+	}
+	&__logo {}
+	&__awards {
+		margin-top: 25px;
+
+		color: rgba(31, 32, 65, 0.75);
+	}
+
+	&__navigations {
+		margin: 0 40px 0 0;
+		flex: 1 1 auto;
+	}
+	&__item {
+		margin: 0 0 20px 0;
+}
+	&__link {
+		color: rgba(31, 32, 65, 0.5);
+	}
+}
+.title {
+	&__panel {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		/* identical to box height */
+
+		text-transform: uppercase;
+
+		margin: 0 0 20px 0;
+
+		color: #1F2041;
+	}
+}
+
+	.panel__field-email .field__input {
+		width: 100%;
+	}
+
+.footer__panels .panel__navigations:last-child{
+	width: 260px;
+	color: rgba(31, 32, 65, 0.75);
+	margin: 0;
+}
+
+.footer-card{
+	width: 100%;
+	max-height: 367px;
+	display: inline-block;
+	text-align: center;
+
+	padding: 10% 0 0 0;
+	position: relative;
+	padding: 0 10px;
+	&__info{
+			margin: 10% 0 0 0;
+		display: inline-block;
+		text-align: center;
+		// width: 368px;
+		// position: absolute;
+		// left: 50%;
+		// margin: 120px 0 0 -179px;
+	}
+
+	&__logo{
+		display: inline-block;
+		// margin: 0 132px;
+	}
+
+	&__social-net{
+		margin: 0 0 10% 0;
+	}
+	&__awards{
+		margin: 25px 0 40px 0;
+
+		color: rgba(31, 32, 65, 0.75);
+	}
+}
+
+.footer-card{
+	display: none;
+}
+
+/////////////////////////////////////////////////////
+
+//Адаптив (на 855px)
+
+	@media (max-width: 855px){
+		.footer-full{
+			display: none;
+		}
+
+		.footer-card{
+			display: block;
+		}
+	}

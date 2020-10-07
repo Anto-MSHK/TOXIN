@@ -1,0 +1,30 @@
+include ../field/field
+include ../buttons/buttons
+
+mixin search-block(title)
+	div.search
+		div.search__container
+			div.search__body
+				h1.search__title= title
+				div.info-search
+					div.info-search__calendar
+						div.info-search__arrial 
+							+field({
+								theme: "dropdown-width",
+								text: "Прибытие",
+								value: "ДД.ММ.ГГГГ"
+							})
+						div.info-search__departure
+							+field({
+								theme: "dropdown-width",
+								text: "Прибытие",
+								value: "ДД.ММ.ГГГГ"
+							})
+					div.info-search__guests
+						+field({
+							theme: "dropdown-width",
+							text: "Гости",
+							value: "Сколько гостей"
+						})
+				div.search__button
+					+button({text: "Подобрать номер", theme: "arrow", href: "#"})

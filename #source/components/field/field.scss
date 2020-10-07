@@ -1,0 +1,70 @@
+.field {
+	&__label {}
+	&__title {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 15px;
+
+		text-transform: uppercase;
+		color: #1F2041;
+
+		margin: 0 0 6px 0;
+	}
+	&__input {
+		width: 150px;
+		height: 44px;
+		display: inline-block;
+		background: #FFFFFF;
+
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		box-sizing: border-box;
+		border-radius: 4px;
+		position: relative;
+	}
+
+
+	&__input span{
+		display: inline-block;
+		margin: 11.56px 0 0 15px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 18px;
+		color: rgba(31, 32, 65, 0.75);
+}
+
+&__input-sub:after{
+			content: "";
+			display: inline-block;
+			background: url("../img/INTERFACE/expand_more.svg") center center no-repeat;
+			width: 44px;
+			height: 44px;
+			position: absolute;
+			right: 0;
+}
+}
+
+.input{
+	display: inline-block;
+	width: 80%;
+		margin: 11.56px 0 0 15px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 18px;
+		color: rgba(31, 32, 65, 0.25);
+}
+
+.but__field{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 13px;
+	bottom:13px;
+	z-index: 10;
+}
