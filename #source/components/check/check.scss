@@ -1,0 +1,73 @@
+.checkbox{
+	&__label{
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+		cursor: pointer;
+	}
+	&__input[type="checkbox"]{
+		display: none;
+	}
+
+	&__label &__sub{
+		width: 20px;
+		height: 20px;
+		border-radius: 4px;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		display: block;
+	}
+
+	&__label &__sub:before{
+		content: "";
+		width: 12px;
+		height: 12px;
+		background-image: url("../../../img/INTERFACE/vector_gradient.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+
+		display: block;
+		margin: 8.3px 9.1px;
+		transform: translate(-50%, -50%) scale(0);
+		border-radius:50%;
+		transition: 300ms ease-in-out 0s;
+	}
+
+	&__input[type = "checkbox"]:checked ~ &__sub:before{
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+
+	&__input[type = "checkbox"]:checked ~ &__sub{
+		border: 1px solid #BC9CFF;
+	}
+
+	&__title{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0 0 0 10px;
+		color: rgba(31, 32, 65, 0.5);
+	}
+
+	&__title-adv{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0 0 0 10px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+
+		&__text{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 14px;
+		display: block;
+		color: rgba(31, 32, 65, 0.5);
+	}
+}

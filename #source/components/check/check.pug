@@ -1,0 +1,14 @@
+mixin checkbox({title, text, name, theme})
+	div.checkbox
+		case theme
+			when "normal"
+				label.checkbox__label
+					input.checkbox__input(type="checkbox" name="")
+					span.checkbox__sub
+					span.checkbox__title= title
+			when "advanced"
+				label.checkbox__label
+					input.checkbox__input(type="checkbox" name="")
+					span.checkbox__sub
+					span.checkbox__title-adv= title
+						span.checkbox__text= text

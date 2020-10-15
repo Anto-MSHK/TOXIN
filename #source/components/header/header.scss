@@ -1,14 +1,19 @@
 .header {
 		box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+		z-index: 10;
+	&__div{
 		background-color: #FFFFFF;
+	}
 	&__container {
 		display: flex;
 		align-items: center;
+		background-color: #FFFFFF;
+		
 }
 	&__logo {
 		margin: 15px 0px;
 	}
-	&__burder-conteiner {
+	&__burger-conteiner {
 		display: none;
 	}
 	&__burger {
@@ -32,16 +37,20 @@
 			font-weight: normal;
 		}
 	}
+
 	}
 	&__item {
 		&_subm:after {
 			content: '';
 
 			display: inline-block;
-			background: url("../img/INTERFACE/expand_more.svg") center center no-repeat;
+			background: url("../../img/INTERFACE/expand_more.svg") center center no-repeat;
 			width: 24px;
 			height: 9px;
 		}
+	}
+	&__item-login{
+		margin: 0 20px 0 10px;
 	}
 	&__link {}
 	&__accaunt {
@@ -70,7 +79,10 @@
 // Адаптив (на 925px)
 
 @media (max-width: 925px) {
-	.button-gradient, .button-frame{
+	.header__item-login{
+		display: none;
+	}
+	.header__item-register{
 		display: none;
 	}
 }
@@ -143,7 +155,6 @@
 			height: 100%;
 			background: rgb(188,156,255);
 			background: linear-gradient(180deg, rgba(188,156,255,1) 0%, rgba(229,229,229,0.9) 100%);
-			z-index: -1;
 			padding: 90px 20px 20px 20px;
 			opacity: 0.1;
 			transition: all 0.3s ease 0s;
@@ -154,6 +165,10 @@
 		.header__navi.active{
 			top: 0;
 			opacity: 1;
+		}
+
+		.header__site-navi li a {
+			font-size: 20px;
 		}
 
 		.navi{

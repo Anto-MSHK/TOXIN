@@ -1,0 +1,47 @@
+@import "../../components/null_style";
+@import "../../components/fonts";
+
+@import "../../components/header/header";
+@import "../../components/footer/footer";
+@import "../../components/buttons/buttons";
+@import "../../components/search-block/search-block";
+@import "../../components/log-in_block/log-in_block";
+@import "../../components/field/field";
+@import "../../components/check/check";
+@import "../../components/check-list/check-list";
+
+body{
+	background: #FFFFFF;
+}
+
+.wrapper {
+	max-width: 1920px; //добавляем отступ 20px
+	// height: ;
+	overflow: hidden;
+	display:flex;
+	flex-direction:column;
+	margin: 0 auto;
+}
+
+.container{
+
+	max-width: 1180px; //добавляем отступ 20px
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.index{
+	&__container{
+	}
+}
+
+
+///////////////////////////////////////////////////
+
+	@media (max-width: 655px){
+		.index{
+			padding:10px 0 10% 0;
+			height: auto;
+		}
+}

@@ -7,6 +7,8 @@
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
+
+	border: 1px solid rgba(31, 32, 65, 0.25);
 	&__container {
 	}
 	&__panels {
@@ -141,5 +143,13 @@
 
 		.footer-card{
 			display: block;
+		}
+	}
+
+	//Адаптив (на 400px)
+
+	@media (max-width: 400px){
+		.footer-card__awards {
+			display: none;
 		}
 	}

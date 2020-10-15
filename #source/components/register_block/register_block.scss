@@ -1,0 +1,115 @@
+.register {
+	&__body {
+		width: 380px;
+		height: 646px;
+		top: 70px;
+		padding: 40px 30px 30px 30px;
+
+		background: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.12);
+		box-sizing: border-box;
+		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+		border-radius: 4px;
+
+		margin: 0 auto;
+	}
+	&__title {
+		margin: 0 0 20px 0;
+		font-family: 'OpenSans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 30px;
+
+		color: #1F2041;
+	}
+	&__button-in {
+		position: relative;
+		margin: 0 0 30px 0;
+	}
+
+	&__button-in .button-arrow{
+	width: 100%; 
+	}
+
+	&__register {
+		display: inline-flex;
+		justify-content:space-between;
+		align-items: center;
+		width: 100%;
+	}
+	&__text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 18px;
+
+		color: #000000;
+	}
+	&__button-create .button-frame{
+		height: 44px;
+		width: 99px;
+		margin: 0 0 0 10px;
+	}
+}
+.info-register {
+	&__surname .field__input, &__name .field__input, &__birthday .field__input, &__email .field__input, &__password .field__input{
+		width: 100%;
+	}
+
+	&__email, &__password, &__surname, &__name{
+		margin: 0 0 10px 0;
+	}
+
+	&__birthday {
+		margin: 0 0 20px 0;
+	}
+
+	&__gender {
+		display: flex;
+		align-items: center;
+		margin: 0 0 20px 0;
+	}
+	&__gender .radio:first-child {
+		margin: 0 20px 0 0;
+	}
+	&__text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		margin: 0 0 5px 0;
+
+		text-transform: uppercase;
+
+		color: #1F2041;
+	}
+	&__toggle {
+		margin: 0 0 20px 0;
+	}
+}
+
+////////////////////////////////////////////////
+
+// Адаптив (на 655px)
+
+	@media (max-width: 655px){
+	.register__body{
+			width: 100%;
+			height: 100%;
+	}
+
+	.info-register__email .field__input{
+		width: 100%;
+	}
+
+	.info-register__password .field__input{
+		width: 100%;
+	}
+
+	.register__register{
+
+	}
+	}

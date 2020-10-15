@@ -1,17 +1,21 @@
-@import "../components/null_style";
-@import "../components/fonts";
+@import "../../components/null_style";
+@import "../../components/fonts";
 
-@import "../components/header/header";
-@import "../components/footer/footer";
-@import "../components/buttons/buttons";
-@import "../components/search-block/search-block";
-@import "../components/field/field";
+@import "../../components/header/header";
+@import "../../components/footer/footer";
+@import "../../components/buttons/buttons";
+@import "../../components/search-block/search-block";
+@import "../../components/field/field";
 
 // @import "main.scss";
 
 // header - font-family: 'Montserrat';
 body{
 	background: #E5E5E5;
+}
+
+body.lock{
+	overflow: hidden;
 }
 
 .wrapper {
@@ -32,8 +36,9 @@ body{
 }
 
 .index{
-	background: url("img/PAGES/landing page/main_background.png") no-repeat 50%/cover;
+	background: url("../../img/PAGES/landing page/main_background.png") no-repeat 50%/cover;
 	padding: 70px 0 369px 0;
+	height: 700px;
 	&__container{
 		position: relative;
 	}
@@ -63,6 +68,7 @@ body{
 	@media (max-width: 655px){
 		.index{
 			padding:10px 0 10% 0;
+			height: auto;
 		}
 }
 

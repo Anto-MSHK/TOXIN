@@ -1,0 +1,49 @@
+div.filter-panel
+	+field({
+		theme: "dropdown-width",
+		text: "даты пребывания в отеле",
+		value: "19 авг - 23 авг"
+	})
+	+field({
+		theme: "dropdown-width",
+		text: "гости",
+		value: "3 гостя"
+	})
+	+check-list({
+		title: "Возможности",
+		items: [
+		{
+		theme: "normal",
+		title: "Можно курить"
+		},
+		{
+		theme: "normal",
+		title: "Можно с питомцами"
+		},
+		{
+		theme: "normal",
+		title: "Можно пригласить гостей (до 10 человек)"
+		}
+		]
+	})
+
+	+check-list({
+		title: "доступность",
+		items: [
+		{
+			theme: "advanced",
+			title: "Широкий коридор",
+			text: "Ширина коридоров в номере не менее 91 см."
+		},
+		{
+			theme: "advanced",
+			title: "Помощник для инвалидов",
+			text: "На 1 этаже вас встретит специалист  и проводит до номера."
+		}
+		]
+	})
+	+field({
+		theme: "dropdown-width",
+		text: "удобства номера",
+		value: "2 спальни"
+	})

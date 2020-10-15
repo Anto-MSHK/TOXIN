@@ -1,0 +1,25 @@
+include ../field/field
+include ../buttons/buttons
+
+mixin login-block()
+	div.login
+		div.login__container
+			div.login__body
+				h1.login__title Войти
+				div.info-login
+					div.info-login__email 
+						+field({
+							theme: "dropdown-normal",
+							value: "Email"
+						})
+					div.info-login__password
+						+field({
+							theme: "dropdown-normal",
+							value: "Пароль"
+						})
+				div.login__button-in
+					+button({text: "Войти", theme: "arrow", href: "#"})
+				div.login__register
+					p.login__text Нет аккаунта на Toxin?
+					div.login__button-create
+						+button({text: "Создать", theme: "frame", href: "#"})

@@ -1,0 +1,96 @@
+.login {
+	&__container {}
+	&__body {
+		width: 380px;
+		height: 358px;
+		top: 70px;
+		padding: 40px 30px 30px 30px;
+
+		background: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.12);
+		box-sizing: border-box;
+		box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+		border-radius: 4px;
+
+		margin: 0 auto;
+	}
+	&__title {
+		margin: 0 0 20px 0;
+		font-family: 'OpenSans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 30px;
+
+		color: #1F2041;
+	}
+
+	&__button-in{
+		position: relative;
+		margin: 0 0 30px 0;
+	}
+
+	&__button-in .button-arrow{
+	width: 100%; 
+	}
+	&__register {
+		display: inline-flex;
+		justify-content:space-between;
+		align-items: center;
+		width: 100%;
+	}
+	&__text {
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 18px;
+
+		color: #000000;
+	}
+	&__button-create .button-frame{
+		height: 44px;
+		width: 99px;
+		margin: 0 0 0 10px;
+	}
+}
+.info-login {
+	&__email {
+		margin: 0 0 10px 0;
+	}
+
+	&__password {
+		margin: 0 0 20px 0;
+	}
+
+	&__email .field__input {
+		width: 100%;
+	}
+
+	&__password .field__input {
+		width: 100%;
+	}
+}
+
+////////////////////////////////////////////////////
+
+// Адаптив (на 655px)
+
+	@media (max-width: 655px){
+	.login__body{
+			width: 100%;
+			height: 100%;
+	}
+
+	.info-login__email .field__input{
+		width: 100%;
+	}
+
+	.info-login__password .field__input{
+		width: 100%;
+	}
+
+	.login__register{
+
+	}
+	}

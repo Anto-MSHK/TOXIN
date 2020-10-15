@@ -1,0 +1,82 @@
+include ../../components/header/header
+include ../../components/search-block/search-block
+include ../../components/log-in_block/log-in_block
+include ../../components/footer/footer
+include ../../components/check-list/check-list
+
+html(lang="ru")
+	head
+		link(rel="stylesheet" type="text/css" href="search.css")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title= "TOXIN"
+	body
+		div.wrapper
+			+header("non-aut", [{name: "О нас"}, {name: "Услуги", subm: true}, {name: "Вакансии"}, {name: "Новости"}, {name: "Соглашения", subm: true}])
+			main.index
+				div.index__container.container
+					div.filter
+						include ../../components/room-filter/room-filter
+			+footer("full", [
+				{title:"Навигация",
+				items: [
+				{
+					title:"О нас",
+					href: "#"
+				},
+				{
+					title:"Новости",
+					href: "#"
+				},
+				{
+					title:"Служба поддержки",
+					href: "#"
+				},
+				{
+					title:"Услуги",
+					href: "#"
+				},
+				]
+				},
+				{title:"О нас",
+				items: [
+				{
+					title:"О сервисе", 
+					href: "#"
+				},
+				{
+					title:"Наша команда", 
+					href: "#"
+				},
+				{
+					title:"Вакансии", 
+					href: "#"
+				},
+				{
+					title:"Инвесторы", 
+					href: "#"
+				},
+				]
+				},
+				{title:"Служба поддержки",
+				items: [
+				{
+					title:"Соглашения", 
+					href: "#"
+				},
+				{
+					title:"Сообщества", 
+					href: "#"
+				},
+				{
+					title:"Связь с нами", 
+					href: "#"
+				},
+				]
+				},
+				])
+
+			+footer("pur")
+
+		script(src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+		script(src= "#source/components/header/header.js")

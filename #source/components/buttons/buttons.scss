@@ -17,7 +17,7 @@
 		color: #BC9CFF;
 
 		z-index: 0;
-		margin: 0 20px 0 10px;
+
 }
 
 .button-frame:before {
@@ -118,7 +118,7 @@
 	.button-arrow:after {
 		content: "";
 		display: inline-block;
-		background: url("../img/INTERFACE/arrow_forward.svg") center center no-repeat;
+		background: url("../../img/INTERFACE/arrow_forward.svg") center center no-repeat;
 		width: 44px;
 		height: 44px;
 		position: absolute;

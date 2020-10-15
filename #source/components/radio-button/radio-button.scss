@@ -1,0 +1,60 @@
+.radio{
+	&__label{
+		// font-size: 24px;
+		// font-weight: 500;
+		display: flex;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+	}
+
+	&__label + &__label{
+	}
+
+	&__input[type="radio"]{
+		display: none;
+	}
+
+	&__label &__sub{
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		display: block;
+		// position: absolute;
+		left: 0;
+		top: 7px;
+	}
+
+	&__label &__sub:after{
+		content: "";
+		width: 12px;
+		height: 12px;
+		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		display: block;
+		// position: absolute;
+		// left: 50%;
+		// top: 50%;
+		margin: 9px 9px;
+		transform: translate(-50%, -50%) scale(0);
+		border-radius:50%;
+		transition: 300ms ease-in-out 0s;
+	}
+
+	&__input[type = "radio"]:checked ~ &__sub:after{
+		transform: translate(-50%, -50%) scale(1);
+	}
+
+	&__input[type = "radio"]:checked ~ &__sub{
+		border: 1px solid #BC9CFF;
+	}
+	&__text{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		margin: 0 0 0 10px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+}

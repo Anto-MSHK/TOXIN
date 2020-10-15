@@ -1,0 +1,26 @@
+body {
+  background: #E5E5E5;
+}
+
+.wrapper {
+  max-width: 1920px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1180px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.index {
+  background: url("img/PAGES/landing page/main_background.png") no-repeat 50%/cover;
+  padding: 70px 0 369px 0;
+}
+.index__container {
+  position: relative;
+}

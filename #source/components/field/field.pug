@@ -7,8 +7,13 @@ mixin field({theme, text, classname, value, placefolder, href} = "")
 				div.field__input.field__input-sub
 					span= value
 				//- input.field__input(value=value autocomplete="off" placeholder=placeholder name=name type=type)
-		when "dropdown-arrow"
+		when "dropdown-normal"
 			div.field
+				label(class="field__label")
+				div.field__input
+					input.input(value=value autocomplete="off" placeholder=placeholder name=name type=type)
+		when "dropdown-arrow"
+			div.field11
 				label(class="field__label")
 				div.field__input
 					input.input(value=value autocomplete="off" placeholder=placeholder name=name type=type)

@@ -1,0 +1,61 @@
+include ../field/field
+include ../buttons/buttons
+include ../../components/radio-button/radio-button
+include ../../components/toggle/toggle
+
+
+mixin register()
+	div.register
+		div.register__body
+			h1.register__title Регистрация аккаунта
+			div.info-register
+				div.info-register__name 
+					+field({
+						theme: "dropdown-normal",
+						value: "Имя"
+					})
+				div.info-register__surname
+					+field({
+						theme: "dropdown-normal",
+						value: "Фамилия"
+					})
+				div.info-register__gender
+					+radio-button({
+						text: "Мужчина",
+						name: "gender",
+						value: "man",
+						checked: "true"
+					})
+					+radio-button({
+						text: "Женщина",
+						name: "gender",
+						value: "woman",
+					})
+				div.info-register__birthday
+					+field({
+						theme: "dropdown-width",
+						text: "Дата рождения",
+						value: "ДД.ММ.ГГГГ"
+					})
+				p.info-register__text данные для входа в сервис
+				div.info-register__email 
+					+field({
+						theme: "dropdown-normal",
+						value: "Email"
+					})
+				div.info-register__password
+					+field({
+						theme: "dropdown-normal",
+						value: "Пароль"
+					})
+				div.info-register__toggle
+					+toggle({
+					text: "Получать спецпредложения",
+					name: "special"
+					})
+			div.register__button-in
+				+button({text: "перейти к оплате", theme: "arrow", href: "#"})
+			div.register__register
+				p.register__text Нет аккаунта на Toxin?
+				div.register__button-create
+					+button({text: "Создать", theme: "frame", href: "#"})

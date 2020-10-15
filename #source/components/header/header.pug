@@ -2,28 +2,30 @@ include ../buttons/buttons
 
 mixin header (status, navigation)
 	header.header
-		div.header__container.container
-			a.header__logo.logo(href="#")
-				img(src="img/LOGO/logo_icon.svg").logo__image
-				img(src="img/LOGO/logo_text.svg").logo__text
-			div.header__burder-conteiner
-				div.header__burger
-					span
-			nav.header__navi
-				ul.header__site-navi.navi
-					each item in navigation
-						if item.subm
-							li.navi__item.header__item_subm
-								a.header__link(href="#") #{item.name}
-						else
-							li.header__item
-								a.header__link(href="#") #{item.name}
-			ul.header__accaunt
-				if status === "non-aut"
-					li.header__item
-						+button({text: "Войти", theme: "frame", href: "#"})
-					li.header__item
-						+button({text: "Зарегестрироваться", theme: "gradient", href: "#"})
-					li.header__item
-						+button({theme: "combined", href: "#"})
-						
+		div.header__div
+			div.header__container.container
+				a.header__logo.logo(href="../index/index.html")
+					img(src="../../img/LOGO/logo_icon.svg").logo__image
+					img(src="../../img/LOGO/logo_text.svg").logo__text
+				div.header__burder-conteiner
+					div.header__burger
+						span
+				nav.header__navi
+					ul.header__site-navi.navi
+						each item in navigation
+							if item.subm
+								li.navi__item.header__item_subm
+									a.header__link(href="#") #{item.name}
+							else
+								li.header__item
+									a.header__link(href="#") #{item.name}
+				ul.header__accaunt
+					if status === "non-aut"
+						li.header__item-login
+							+button({text: "Войти", theme: "frame", href: "../log_in/log_in.html"})
+						li.header__item-register
+							+button({text: "Зарегестрироваться", theme: "gradient", href: "../register/register.html"})
+						li.header__item
+							+button({theme: "combined", href: "#"})
+
+
