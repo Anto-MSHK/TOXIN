@@ -1,0 +1,27 @@
+.checkbox-list__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.checkbox-list__list {
+  margin: 10px 0 0 0;
+}
+.checkbox-list__list .checkbox-list__item:last-child {
+  margin: 0 0 0 0;
+}
+.checkbox-list__item {
+  margin: 0 0 10px 0;
+}
+
+.checkbox-list-dropdown__title {
+  position: relative;
+}
+.checkbox-list-dropdown__list {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

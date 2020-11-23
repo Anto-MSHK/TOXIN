@@ -1,9 +1,0 @@
-include ../../components/check/check
-
-mixin check-list({title, items})
-	div.checkbox-list
-		span.checkbox-list__title= title
-		ul.checkbox-list__list
-			each item in items
-				li.checkbox-list__item
-					+checkbox(item)

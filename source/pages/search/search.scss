@@ -9,9 +9,17 @@
 @import "../../components/field/field";
 @import "../../components/check/check";
 @import "../../components/check-list/check-list";
+@import "../../components/room-filter/room-filter";
+@import "../../components/price-range/price-range";
+@import "../../components/preview-room/preview-room";
+@import "../../components/rating-stars/rating-stars";
 
 body{
 	background: #FFFFFF;
+}
+
+body.lock{
+	overflow: hidden;
 }
 
 .wrapper {
@@ -34,8 +42,8 @@ body{
 .index{
 	&__container{
 	}
-}
 
+}
 
 ///////////////////////////////////////////////////
 

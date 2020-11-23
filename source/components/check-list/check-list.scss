@@ -1,0 +1,85 @@
+.checkbox-list{
+&__title{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+
+	text-transform: uppercase;
+
+	color: #1F2041;
+}
+
+&__list{
+	margin: 10px 0 0 0;
+}
+
+&__list &__item:last-child{
+	margin: 0 0 0 0;
+}
+
+&__item{
+	margin: 0 0 10px 0;
+}
+}
+
+.checkbox-list-dropdown{
+	&__title{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		cursor: pointer;
+		text-transform: uppercase;
+		position: relative;
+		color: #1F2041;
+		display: block;
+		width: 100%;
+	}
+
+	&__title:before{
+		content: "";
+		position: absolute;
+		display: block;
+		background: url("../../img/INTERFACE/expand_more.svg") center center no-repeat;
+		width: 24px;
+		height: 9px;
+		transition: all 0.5s ease 0s;
+		top: 25%;
+		right: 10px;
+	}
+	
+	&__title.active:before{
+		content: "";
+		transform: rotate(180deg);
+		transition: all 0.5s ease 0s;
+	}
+
+&__list{
+	display: block;
+		position: relative;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
+
+	&__list.active{		
+		display: block;
+		position: relative;
+		top: 10px;
+		left: 0;
+		opacity: 1;
+		transition: all 0.5s ease 0s;
+	}
+
+	&__item{		
+		display: none;
+	}
+
+	&__item.active{
+		display: block;
+		margin: 0px 0px 10px 0px;
+	}
+}

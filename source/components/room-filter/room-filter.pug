@@ -1,0 +1,92 @@
+include ../../components/field/field
+include ../../components/check-list/check-list
+
+
+div.filter-panel
+	div.filter-panel__stay
+		+field({
+			theme: "dropdown-width",
+			text: "даты пребывания в отеле",
+			value: "19 авг - 23 авг"
+		})
+	div.filter-panel__guests
+		+field({
+			theme: "dropdown-width",
+			text: "гости",
+			value: "3 гостя"
+		})
+	div.filter-panel__range
+		include ../../components/price-range/price-range
+	div.filter-panel__capability
+		+check-list({
+			title: "Возможности",
+			theme: "normal",
+			items: [
+			{
+			theme: "normal",
+			title: "Можно курить"
+			},
+			{
+			theme: "normal",
+			title: "Можно с питомцами"
+			},
+			{
+			theme: "normal",
+			title: "Можно пригласить гостей (до 10 человек)"
+			}
+			]
+		})
+	div.filter-panel__access
+		+check-list({
+			title: "доступность",
+			theme: "normal",
+			items: [
+			{
+			theme: "advanced",
+			title: "Широкий коридор",
+			text: "Ширина коридоров в номере не менее 91 см."
+			},
+			{
+			theme: "advanced",
+			title: "Помощник для инвалидов",
+			text: "На 1 этаже вас встретит специалист  и проводит до номера."
+			}
+			]
+		})
+	div.filter-panel__comfort
+		+field({
+			theme: "dropdown-width",
+			text: "удобства номера",
+			value: "2 спальни"
+		})
+	div.filter-panel__add-comfort
+		+check-list({
+			title: "дополнительные удобства",
+			theme: "dropdown",
+			items: [
+			{
+			theme: "normal",
+			title: "Завтрак"
+			},
+			{
+			theme: "normal",
+			title: "Письменный стол"
+			},
+			{
+			theme: "normal",
+			title: "Стул для кормления"
+			},
+			{
+			theme: "normal",
+			title: "Кроватка"
+			},
+			{
+			theme: "normal",
+			title: "Телевизор"
+			},
+			{
+			theme: "normal",
+			title: "Шампунь"
+			}
+			]
+		})

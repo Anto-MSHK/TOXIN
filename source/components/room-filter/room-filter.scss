@@ -1,0 +1,24 @@
+.filter {
+	
+}
+.filter-panel {
+	width: 266px;
+	&__stay {
+		margin: 30px 0 20px 0;
+	}
+	&__guests {}
+	&__range {}
+	&__capability {}
+	&__access {}
+	&__comfort {}
+	&__add-comfort {}
+
+
+	&__stay .field__input, &__guests .field__input, &__comfort .field__input {
+		width: 100%;
+	}
+
+	&__guests, &__range, &__capability, &__access, &__comfort, &__add-comfort{
+		margin: 0 0 30px 0;
+	}
+}

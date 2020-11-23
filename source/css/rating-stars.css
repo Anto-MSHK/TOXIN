@@ -1,0 +1,9 @@
+.rating-stars {
+  display: inline-block;
+  flex-direction: row-reverse;
+}
+.rating-stars__item {
+  background-image: url("../../../INTERFACE/star_disabled.svg");
+  width: 24px;
+  height: 24px;
+}

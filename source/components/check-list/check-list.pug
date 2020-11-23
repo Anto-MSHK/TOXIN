@@ -1,0 +1,18 @@
+include ../../components/check/check
+
+mixin check-list({title, items, theme})
+	case theme
+		when "normal"
+			div.checkbox-list
+				span.checkbox-list__title= title
+				ul.checkbox-list__list
+					each item in items
+						li.checkbox-list__item
+							+checkbox(item)
+		when "dropdown"
+			div.checkbox-list-dropdown
+				a.checkbox-list-dropdown__title= title
+				ul.checkbox-list-dropdown__list
+					each item in items
+						li.checkbox-list-dropdown__item
+							+checkbox(item)

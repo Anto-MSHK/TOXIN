@@ -3,6 +3,7 @@ include ../../components/search-block/search-block
 include ../../components/log-in_block/log-in_block
 include ../../components/footer/footer
 include ../../components/check-list/check-list
+include ../../components/preview-room/preview-room
 
 html(lang="ru")
 	head
@@ -17,6 +18,8 @@ html(lang="ru")
 				div.index__container.container
 					div.filter
 						include ../../components/room-filter/room-filter
+					div.room
+						+preview-room({img: "../../../img/PAGES/search/rooms/image1.jpg", num: "888", lux: "true", price: "9990", reviews: "145"})
 			+footer("full", [
 				{title:"Навигация",
 				items: [
@@ -79,4 +82,4 @@ html(lang="ru")
 			+footer("pur")
 
 		script(src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
-		script(src= "#source/components/header/header.js")
+		script(src= "search.js")
