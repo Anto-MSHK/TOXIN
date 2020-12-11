@@ -13,6 +13,7 @@
 @import "../../components/price-range/price-range";
 @import "../../components/preview-room/preview-room";
 @import "../../components/rating-stars/rating-stars";
+@import "../../components/rooms/rooms";
 
 body{
 	background: #FFFFFF;
@@ -43,6 +44,11 @@ body.lock{
 	&__container{
 	}
 
+}
+
+.index__container{
+	display: flex;
+	justify-content: space-between;
 }
 
 ///////////////////////////////////////////////////

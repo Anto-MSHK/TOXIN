@@ -8,6 +8,7 @@ include("../../source/components/header/header.js");
 include("../../source/components/check-list/check-list.js");
 include("../../source/components/price-range/price-range.js");
 include("../../source/components/rating-stars/rating-stars.js");
+include("../../source/components/preview-room/preview-room.js");
 });
 
 

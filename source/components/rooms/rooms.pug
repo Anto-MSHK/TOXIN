@@ -1,0 +1,9 @@
+include ../preview-room/preview-room
+
+mixin rooms(items)
+	div.rooms
+		span.rooms__text-offer Номера, которые мы для вас подобрали
+			span.rooms__show-filter
+		div.rooms__grid
+			each item in items
+				+preview-room(item)

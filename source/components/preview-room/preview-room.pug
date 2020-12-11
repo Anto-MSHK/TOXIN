@@ -1,10 +1,18 @@
 include ../rating-stars/rating-stars
 
-mixin preview-room({img, num, lux, price, reviews} = "")
+mixin preview-room({img, num, lux, price, reviews, stars} = "")
 	div.preview-room
 		div.preview-room__body
 			//a(href= "#" class= "preview-room__link")
-			img.preview-room__image(src= img, alt= "Фото номера")
+			div.preview-room__slider
+				div.preview-room__slider-item
+					img(data-lazy= img)
+				div.preview-room__slider-item
+					img(data-lazy= img)
+				div.preview-room__slider-item
+					img(data-lazy= img)
+				div.preview-room__slider-item
+					img(data-lazy= img)
 			div.preview-room__info
 				div.preview-room__info-up
 					div.preview-room__number
@@ -16,7 +24,7 @@ mixin preview-room({img, num, lux, price, reviews} = "")
 						span.preview-room__price-text= price + "₽"
 						|  в сутки
 				div.preview-room__info-down
-					+rating-stars({stars: "0"})
+					+rating-stars({stars: stars})
 					div.preview-room__reviews
 						span.preview-room__reviews-text= reviews
 						|  Отзывов

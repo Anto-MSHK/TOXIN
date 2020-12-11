@@ -72,6 +72,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 @font-face {
   font-family: "Montserrat";
   src: url("../../fonts/Montserrat-SemiBold.eot");
@@ -998,6 +1023,84 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 18px;
 }
+.preview-room__slider {
+  position: relative;
+}
+.preview-room__slider .slick-list {
+  border-radius: 4px 4px 0px 0px;
+}
+.preview-room__slider .slick-arrow {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  font-size: 0;
+  width: 44px;
+  height: 100%;
+}
+.preview-room__slider .slick-arrow.slick-prev {
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.preview-room__slider .slick-arrow.slick-next {
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.preview-room__slider .slick-arrow.slick-prev:before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -22px 0 0 0;
+  background: url("../../../img/INTERFACE/slider/expand_left.svg") center center no-repeat;
+}
+.preview-room__slider .slick-arrow.slick-next:before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin: -22px 0 0 0;
+  background: url("../../../img/INTERFACE/slider/expand_right.svg") center center no-repeat;
+}
+.preview-room__slider .slick-arrow.slick-prev:hover {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 4px 0px 0px 0px;
+}
+.preview-room__slider .slick-arrow.slick-next:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 0px 4px 0px 0px;
+}
+.preview-room__slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 10;
+}
+.preview-room__slider .slick-dots li {
+  list-style: none;
+}
+.preview-room__slider .slick-dots li button {
+  font-size: 0;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px 0 0;
+}
+.preview-room__slider .slick-dots li.slick-active button {
+  background: #FFFFFF;
+  transition: 0.2s;
+}
 
 .rating-stars {
   display: inline-flex;
@@ -1029,6 +1132,25 @@ h1, h2, h3, h4, h5, h6 {
   height: 24px;
 }
 
+.rooms {
+  margin: 30px 0 40px 0;
+}
+.rooms__text-offer {
+  font-family: OpenSans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+.rooms__grid {
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+}
+
 body {
   background: #FFFFFF;
 }
@@ -1050,6 +1172,11 @@ body.lock {
   min-width: 320px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.index__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 655px) {

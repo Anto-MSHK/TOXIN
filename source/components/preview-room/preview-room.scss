@@ -101,4 +101,118 @@
 		line-height: 18px;
 
 	}
+
+	&__slider{
+		position: relative;
+	}
+
+	&__slider .slick-list{
+		border-radius: 4px 4px 0px 0px;
+	}
+
+	&__slider .slick-arrow{
+		position: absolute;
+		top: 0;
+		// margin: -50% 0 0 0;
+		z-index: 10;
+		font-size: 0;
+		width: 44px;
+		height: 100%;
+	}
+
+	&__slider .slick-arrow.slick-prev{
+		left: 0;
+		
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+		// background: url("../../../img/INTERFACE/slider/expand_left.svg") center center no-repeat;
+	}
+
+	&__slider .slick-arrow.slick-next{
+		right: 0;
+		
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+		// background: url("../../../img/INTERFACE/slider/expand_right.svg") center center no-repeat;
+	}
+
+
+	&__slider .slick-arrow.slick-prev:before{
+		content: '';
+		width: 44px;
+		height: 44px;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin: -22px 0 0 0;
+		background: url("../../../img/INTERFACE/slider/expand_left.svg") center center no-repeat;
+	}
+
+	&__slider .slick-arrow.slick-next:before{
+		content: '';
+		width: 44px;
+		height: 44px;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin: -22px 0 0 0;
+		background: url("../../../img/INTERFACE/slider/expand_right.svg") center center no-repeat;
+	}
+
+	&__slider .slick-arrow.slick-prev:hover{
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+		border-radius: 4px 0px 0px 0px
+	}
+
+	&__slider .slick-arrow.slick-next:hover{
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5) 100%);
+		border-radius: 0px 4px 0px 0px
+	}
+
+
+
+	// &__slider .slick-arrow.slick-next:before{
+	// 	content: 'gf';
+	// 	width: 50px;
+	// 	height: 50px;
+	// 	display: block;
+	// 	position: absolute;
+	// 	background: red;
+	// }
+
+
+
+	&__slider-item{
+		
+	}
+
+	&__slider .slick-dots{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		bottom: 14px;
+		right: 14px;
+		z-index: 10;
+	}
+	&__slider .slick-dots li{
+		list-style: none;
+	}
+	&__slider .slick-dots li button{
+		font-size: 0;
+		
+		background: none;
+		border-radius:50%;
+		border: 1px solid #FFFFFF;
+		box-sizing: border-box;
+
+		width: 8px;
+		height: 8px;
+		margin: 0 4px 0 0;
+	}
+
+	&__slider .slick-dots li.slick-active button{
+		background: #FFFFFF;
+		transition: 0.2s;
+	}
 }
