@@ -1,6 +1,6 @@
 include ../../components/check/check
 
-mixin check-list({title, items, theme})
+mixin check-list({title, theme, items})
 	case theme
 		when "normal"
 			div.checkbox-list
@@ -9,6 +9,12 @@ mixin check-list({title, items, theme})
 					each item in items
 						li.checkbox-list__item
 							+checkbox(item)
+		when "usual"
+			div.checkbox-list
+				span.checkbox-list__title_usual= title
+				ul.checkbox-list__list
+					each item in items
+						li.checkbox-list__item_usual= item
 		when "dropdown"
 			div.checkbox-list-dropdown
 				a.checkbox-list-dropdown__title= title

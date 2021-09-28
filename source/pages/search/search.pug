@@ -5,6 +5,7 @@ include ../../components/footer/footer
 include ../../components/check-list/check-list
 include ../../components/preview-room/preview-room
 include ../../components/rooms/rooms
+include ../../components/pagination/pagination
 
 html(lang="ru")
 	head
@@ -19,91 +20,96 @@ html(lang="ru")
 				div.index__container.container
 					div.filter
 						include ../../components/room-filter/room-filter
-					+rooms([{
-						img: "../../../img/PAGES/search/rooms/image1.png", 
-						num: "888", lux: "true", 
-						price: "9 990", 
-						reviews: "145",
-						stars: "5"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image2.png", 
-						num: "840", lux: "false", 
-						price: "9 990", 
-						reviews: "65",
-						stars: "4"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image3.png", 
-						num: "980", lux: "true", 
-						price: "8 500", 
-						reviews: "35",
-						stars: "3"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image4.png", 
-						num: "856", lux: "false", 
-						price: "7 300", 
-						reviews: "19",
-						stars: "5"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image5.png", 
-						num: "740", lux: "false", 
-						price: "6 000", 
-						reviews: "44",
-						stars: "4"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image6.png", 
-						num: "982", lux: "false", 
-						price: "5 800", 
-						reviews: "56",
-						stars: "3"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image7.png", 
-						num: "678", lux: "false", 
-						price: "5 500", 
-						reviews: "45",
-						stars: "5"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image8.png", 
-						num: "450", lux: "false", 
-						price: "5 300", 
-						reviews: "39",
-						stars: "4"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image9.png", 
-						num: "350", lux: "false", 
-						price: "5 000", 
-						reviews: "77",
-						stars: "3"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image10.png", 
-						num: "666", lux: "false", 
-						price: "5 000", 
-						reviews: "25",
-						stars: "5"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image11.png", 
-						num: "444", lux: "false", 
-						price: "5 000", 
-						reviews: "15",
-						stars: "3"
-					},
-					{
-						img: "../../../img/PAGES/search/rooms/image12.png", 
-						num: "352", lux: "false", 
-						price: "5 000", 
-						reviews: "55",
-						stars: "3"
-					}
-					])
+					div.room-items
+						+rooms([{
+							img: "../../../img/PAGES/search/rooms/image1.png", 
+							num: "888", lux: "true", 
+							price: "9 990", 
+							reviews: "145",
+							stars: "5"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image2.png", 
+							num: "840", lux: "false", 
+							price: "9 990", 
+							reviews: "65",
+							stars: "4"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image3.png", 
+							num: "980", lux: "true", 
+							price: "8 500", 
+							reviews: "35",
+							stars: "3"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image4.png", 
+							num: "856", lux: "false", 
+							price: "7 300", 
+							reviews: "19",
+							stars: "5"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image5.png", 
+							num: "740", lux: "false", 
+							price: "6 000", 
+							reviews: "44",
+							stars: "4"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image6.png", 
+							num: "982", lux: "false", 
+							price: "5 800", 
+							reviews: "56",
+							stars: "3"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image7.png", 
+							num: "678", lux: "false", 
+							price: "5 500", 
+							reviews: "45",
+							stars: "5"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image8.png", 
+							num: "450", lux: "false", 
+							price: "5 300", 
+							reviews: "39",
+							stars: "4"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image9.png", 
+							num: "350", lux: "false", 
+							price: "5 000", 
+							reviews: "77",
+							stars: "3"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image10.png", 
+							num: "666", lux: "false", 
+							price: "5 000", 
+							reviews: "25",
+							stars: "5"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image11.png", 
+							num: "444", lux: "false", 
+							price: "5 000", 
+							reviews: "15",
+							stars: "3"
+						},
+						{
+							img: "../../../img/PAGES/search/rooms/image12.png", 
+							num: "352", lux: "false", 
+							price: "5 000", 
+							reviews: "55",
+							stars: "3"
+						}
+						])
+						+pagination({
+							current:1,
+							totalPages: 15,
+							totalRooms: 100})
 			+footer("full", [
 				{title:"Навигация",
 				items: [

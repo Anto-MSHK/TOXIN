@@ -1,0 +1,109 @@
+include ../../components/header/header
+include ../../components/footer/footer
+include ../../components/info-cards/info-cards
+include ../../components/rev-comment/rev-comment
+include ../../components/check-list/check-list
+include ../../components/photo-collage/photo-collage
+
+html(lang="ru")
+	head
+		link(rel="stylesheet" type="text/css" href="room_details.css")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title= "TOXIN"
+	body
+		div.wrapper
+			+header("non-aut", [{name: "О нас"}, {name: "Услуги", subm: true}, {name: "Вакансии"}, {name: "Новости"}, {name: "Соглашения", subm: true}])
+			main.index
+				div.photo-room
+						+photo-collage({
+							items: ["../../../img/PAGES/room details/image1.jpg", 
+							"../../../img/PAGES/room details/image2.jpg", 
+							"../../../img/PAGES/room details/image3.jpg",
+							]
+							})
+				div.index__container.container
+					div.information-room
+						div.add-info
+							div.add-info__header Сведения о номере
+							+info-card({image: "../../../img/INTERFACE/insert_emoticon.svg", heading: "Комфорт", text: "Шумопоглощающие стены"})
+							+info-card({image: "../../../img/INTERFACE/location_city.svg", heading: "Удобство", text: "Окно в каждой из спален"})
+							+info-card({image: "../../../img/INTERFACE/whatshot.svg", heading: "Уют", text: "Номер оснащён камином"})
+						div.room-payment
+							include ../../components/payment-receipt/payment-receipt
+						div.user-comments 
+							div.user-comments__header Отзывы посетителей номера
+							+rev-comment({image: "../../../img/INTERFACE/image_people/Murad.png", name: "Мурад Сарафанов", status: "5 дней назад", text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.", likes: "12"})
+							+rev-comment({image: "../../../img/INTERFACE/image_people/Patris.png", name: "Патрисия Стёклышкова", status: "Неделю назад", text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент", likes: "2"})
+						div.list_rules
+							+check-list({
+								title: "Возможности",
+								theme: "usual",
+								items: ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]
+							})
+						div.cancel-info
+							span.cancel-info__title Отмена
+							span.cancel-info__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+			+footer("full", [
+				{title:"Навигация",
+				items: [
+				{
+					title:"О нас",
+					href: "#"
+				},
+				{
+					title:"Новости",
+					href: "#"
+				},
+				{
+					title:"Служба поддержки",
+					href: "#"
+				},
+				{
+					title:"Услуги",
+					href: "#"
+				},
+				]
+				},
+				{title:"О нас",
+				items: [
+				{
+					title:"О сервисе", 
+					href: "#"
+				},
+				{
+					title:"Наша команда", 
+					href: "#"
+				},
+				{
+					title:"Вакансии", 
+					href: "#"
+				},
+				{
+					title:"Инвесторы", 
+					href: "#"
+				},
+				]
+				},
+				{title:"Служба поддержки",
+				items: [
+				{
+					title:"Соглашения", 
+					href: "#"
+				},
+				{
+					title:"Сообщества", 
+					href: "#"
+				},
+				{
+					title:"Связь с нами", 
+					href: "#"
+				},
+				]
+				},
+				])
+
+			+footer("pur")
+
+	script(src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+	script(src= "header.js")

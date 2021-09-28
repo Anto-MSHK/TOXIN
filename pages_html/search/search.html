@@ -47,16 +47,43 @@
             <div class="filter-panel">
               <div class="filter-panel__stay">
                             <div class="field">
-                              <label class="field__label"></label>
                               <div class="field__title">даты пребывания в отеле</div>
-                              <div class="field__input field__input-sub"><span>19 авг - 23 авг</span></div>
+                              <div class="field__value">
+                                <label class="field__label"></label>
+                                <div class="field__input field__input-sub"><span>19 авг - 23 авг</span></div>
+                              </div>
                             </div>
               </div>
               <div class="filter-panel__guests">
                             <div class="field">
-                              <label class="field__label"></label>
                               <div class="field__title">гости</div>
-                              <div class="field__input field__input-sub"><span>3 гостя</span></div>
+                              <div class="field__value">
+                                <label class="field__label"></label>
+                                <div class="field__input field__input-sub"><span>3 гостя</span></div>
+                                <div class="field__sub">
+                                  <ul>
+                                    <li class="field__item item-field"><span class="item-field__text">взрослые</span>
+                                      <div class="item-field__custom">
+                                        <div class="item-field__minus">-</div><span class="item-field__value">1</span>
+                                        <div class="item-field__plus">+</div>
+                                      </div>
+                                    </li>
+                                    <li class="field__item item-field"><span class="item-field__text">дети</span>
+                                      <div class="item-field__custom">
+                                        <div class="item-field__minus">-</div><span class="item-field__value">2</span>
+                                        <div class="item-field__plus">+</div>
+                                      </div>
+                                    </li>
+                                    <li class="field__item item-field"><span class="item-field__text">младенцы</span>
+                                      <div class="item-field__custom">
+                                        <div class="item-field__minus">-</div><span class="item-field__value">4</span>
+                                        <div class="item-field__plus">+</div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                  <div class="field__oper-btn"><span class="field__btn-clear">очистить</span><span class="field__btn-apply">применить</span></div>
+                                </div>
+                              </div>
                             </div>
               </div>
               <div class="filter-panel__range">
@@ -119,9 +146,16 @@
               </div>
               <div class="filter-panel__comfort">
                             <div class="field">
-                              <label class="field__label"></label>
                               <div class="field__title">удобства номера</div>
-                              <div class="field__input field__input-sub"><span>2 спальни</span></div>
+                              <div class="field__value">
+                                <label class="field__label"></label>
+                                <div class="field__input field__input-sub"><span>2 спальни</span></div>
+                                <div class="field__sub">
+                                  <ul>
+                                  </ul>
+                                  <div class="field__oper-btn"><span class="field__btn-clear">очистить</span><span class="field__btn-apply">применить</span></div>
+                                </div>
+                              </div>
                             </div>
               </div>
               <div class="filter-panel__add-comfort">
@@ -174,344 +208,349 @@
               </div>
             </div>
           </div>
-          <div class="rooms"><span class="rooms__text-offer">Номера, которые мы для вас подобрали<span class="rooms__show-filter"></span></span>
-            <div class="rooms__grid">
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">888</span><span class="preview-room__lux">ЛЮКС</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">9 990₽</span> в сутки</div>
+          <div class="room-items">
+            <div class="rooms"><span class="rooms__text-offer">Номера, которые мы для вас подобрали<span class="rooms__show-filter"></span></span>
+              <div class="rooms__grid">
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image1.png"/></div>
                     </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="5">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">888</span><span class="preview-room__lux">ЛЮКС</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">9 990₽</span> в сутки</div>
                       </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">145</span> Отзывов</div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="5">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">145</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">840</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">9 990₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="4">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">65</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">980</span><span class="preview-room__lux">ЛЮКС</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">8 500₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="3">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">35</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">856</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">7 300₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="5">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">19</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">740</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">6 000₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="4">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">44</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">982</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">5 800₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="3">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">56</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">678</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">5 500₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="5">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">45</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">450</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">5 300₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="4">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">39</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">350</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="3">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">77</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">666</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="5">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">25</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">444</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="3">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">15</span> Отзывов</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preview-room">
+                  <div class="preview-room__body">
+                    <!--a(href= "#" class= "preview-room__link")-->
+                    <div class="preview-room__slider">
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
+                      <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
+                    </div>
+                    <div class="preview-room__info">
+                      <div class="preview-room__info-up">
+                        <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">352</span>
+                        </div>
+                        <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
+                      </div>
+                      <div class="preview-room__info-down">
+                        <div class="rating-stars" data-total-value="3">
+                          <div class="rating-stars__item" data-item-value="5"></div>
+                          <div class="rating-stars__item" data-item-value="4"></div>
+                          <div class="rating-stars__item" data-item-value="3"></div>
+                          <div class="rating-stars__item" data-item-value="2"></div>
+                          <div class="rating-stars__item" data-item-value="1"></div>
+                        </div>
+                        <div class="preview-room__reviews"><span class="preview-room__reviews-text">55</span> Отзывов</div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image2.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">840</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">9 990₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="4">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">65</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image3.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">980</span><span class="preview-room__lux">ЛЮКС</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">8 500₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="3">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">35</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image4.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">856</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">7 300₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="5">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">19</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image5.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">740</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">6 000₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="4">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">44</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image6.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">982</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">5 800₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="3">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">56</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image7.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">678</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">5 500₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="5">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">45</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image8.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">450</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">5 300₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="4">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">39</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image9.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">350</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="3">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">77</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image10.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">666</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="5">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">25</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image11.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">444</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="3">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">15</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="preview-room">
-                <div class="preview-room__body">
-                  <!--a(href= "#" class= "preview-room__link")-->
-                  <div class="preview-room__slider">
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
-                    <div class="preview-room__slider-item"><img data-lazy="../../../img/PAGES/search/rooms/image12.png"/></div>
-                  </div>
-                  <div class="preview-room__info">
-                    <div class="preview-room__info-up">
-                      <div class="preview-room__number"><span class="preview-room__number-ico">№</span><span class="preview-room__number-num">352</span>
-                      </div>
-                      <div class="preview-room__price"><span class="preview-room__price-text">5 000₽</span> в сутки</div>
-                    </div>
-                    <div class="preview-room__info-down">
-                      <div class="rating-stars" data-total-value="3">
-                        <div class="rating-stars__item" data-item-value="5"></div>
-                        <div class="rating-stars__item" data-item-value="4"></div>
-                        <div class="rating-stars__item" data-item-value="3"></div>
-                        <div class="rating-stars__item" data-item-value="2"></div>
-                        <div class="rating-stars__item" data-item-value="1"></div>
-                      </div>
-                      <div class="preview-room__reviews"><span class="preview-room__reviews-text">55</span> Отзывов</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="pagination">
+              <div class="pagination__pages"><a class="pagination__item pagination__item_current" href="#!">1</a><a class="pagination__item" href="#!">2</a><a class="pagination__item" href="#!">3</a><a class="pagination__item pagination__item_disabled" href="#!">...</a><a class="pagination__item" href="#!">15</a><a class="pagination__item pagination__item_arrow" href="#!"><img src="../../../img/INTERFACE/arrow_forward.svg"/></a></div><span class="pagination__text">1 - 12 из 100+ вариантов аренды</span>
             </div>
           </div>
         </div>

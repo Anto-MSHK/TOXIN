@@ -1,0 +1,44 @@
+.pagination {
+	width: 241px;
+	margin: 0 auto 70px auto;
+	&__pages {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 10px 0;
+
+	}
+	
+	&__item {
+		width: 40px;
+		height: 40px;
+		padding: 12px;
+
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		color: rgba(31, 32, 65, 0.5);
+		&_current {
+		background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		border-radius: 50%;
+		color: #FFFFFF;
+		}
+		&_disabled {}
+		&_arrow {
+			background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+			border-radius: 50%;
+		}
+	}
+
+	&__text{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		padding: 0 6px;
+		color: rgba(31, 32, 65, 0.75);
+	}
+}

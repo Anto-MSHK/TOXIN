@@ -627,81 +627,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 20px 0;
   }
 }
-.login__body {
-  width: 380px;
-  height: 358px;
-  top: 70px;
-  padding: 40px 30px 30px 30px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  margin: 0 auto;
-}
-.login__title {
-  margin: 0 0 20px 0;
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #1F2041;
-}
-.login__button-in {
-  position: relative;
-  margin: 0 0 30px 0;
-}
-.login__button-in .button-arrow {
-  width: 100%;
-}
-.login__register {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.login__text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-}
-.login__button-create .button-frame {
-  height: 44px;
-  width: 99px;
-  margin: 0 0 0 10px;
-}
-
-.info-login__email {
-  margin: 0 0 10px 0;
-}
-.info-login__password {
-  margin: 0 0 20px 0;
-}
-.info-login__email .field__input {
-  width: 100%;
-}
-.info-login__password .field__input {
-  width: 100%;
-}
-
-@media (max-width: 655px) {
-  .login__body {
-    width: 100%;
-    height: 100%;
-  }
-
-  .info-login__email .field__input {
-    width: 100%;
-  }
-
-  .info-login__password .field__input {
-    width: 100%;
-  }
-}
 .field__title {
   font-family: Montserrat;
   font-style: normal;
@@ -866,8 +791,345 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10;
 }
 
+.info-card {
+  display: flex;
+}
+.info-card__icon {
+  width: 48px;
+  height: 48px;
+}
+.info-card__content {
+  margin: auto 0;
+  padding: 0 0 0 10px;
+}
+.info-card__heading, .info-card__text {
+  display: block;
+  position: relative;
+}
+.info-card__heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.info-card__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.info-card__text:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 280px;
+  height: 1px;
+  left: -58px;
+  bottom: -20px;
+  background: rgba(31, 32, 65, 0.1);
+}
+
+.rev-comment {
+  display: flex;
+}
+.rev-comment__info-piople {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 0 0;
+}
+.rev-comment__icon {
+  width: 48px;
+  height: 48px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.rev-comment__name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.rev-comment__status {
+  font-weight: initial;
+}
+.rev-comment__lake-text {
+  display: flex;
+  flex-direction: column;
+}
+.rev-comment__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 6px 0 0 0;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.rev-comment button {
+  margin: 10px auto;
+}
+
+.checkbox-list__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.checkbox-list__title_usual {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+  margin: 0 0 0 20px;
+}
+.checkbox-list__list {
+  margin: 10px 0 0 0;
+}
+.checkbox-list__list .checkbox-list__item:last-child {
+  margin: 0 0 0 0;
+}
+.checkbox-list__item {
+  margin: 0 0 10px 0;
+}
+.checkbox-list__item_usual {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.checkbox-list__item_usual:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: relative;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  background: rgba(31, 32, 65, 0.25);
+}
+
+.checkbox-list-dropdown__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  color: #1F2041;
+  display: block;
+  width: 100%;
+}
+.checkbox-list-dropdown__title:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../../img/INTERFACE/expand_more.svg") center center no-repeat;
+  width: 24px;
+  height: 9px;
+  transition: all 0.5s ease 0s;
+  top: 25%;
+  right: 10px;
+}
+.checkbox-list-dropdown__title.active:before {
+  content: "";
+  transform: rotate(180deg);
+  transition: all 0.5s ease 0s;
+}
+.checkbox-list-dropdown__list {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.checkbox-list-dropdown__list.active {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+.checkbox-list-dropdown__item {
+  display: none;
+}
+.checkbox-list-dropdown__item.active {
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+
+.photo-collage {
+  display: grid;
+  grid-template: 1fr/2fr 1fr;
+  grid-auto-rows: dense;
+}
+.photo-collage__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-collage__img:nth-child(1) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.payment__body {
+  width: 380px;
+  top: 70px;
+  padding: 40px 30px 30px 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.payment__title {
+  margin: 0 0 20px 0;
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+.payment__button {
+  position: relative;
+  margin: 20px 0 0 0;
+}
+.payment__button .button-arrow {
+  width: 100%;
+}
+
+.info-payment__calendar {
+  display: inline-flex;
+  width: 320px;
+  justify-content: space-between;
+}
+.info-payment__guests {
+  margin: 20px 0 0 0;
+}
+.info-payment__guests .field__input {
+  width: 100%;
+}
+.info-payment__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+.info-payment__number {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  color: #1F2041;
+}
+.info-payment__number-ico {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 3px 0 0;
+}
+.info-payment__number-num {
+  font-size: 22px;
+  line-height: 17px;
+}
+.info-payment__lux {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  margin: 0 0 0 8px;
+}
+.info-payment__price {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.info-payment__price-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.prices {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.prices__basic, .prices__services, .prices__services-plus {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+}
+.prices__basic {
+  margin: 20px 0 0 0;
+}
+.prices__services-text:after, .prices__services-plus-text:after {
+  content: "i";
+  display: inline;
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 2px 8px;
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+.prices__total {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+  display: grid;
+  grid-template: 1fr/auto 1fr auto;
+  margin: 30px 0 0 0;
+}
+.prices__total-price {
+  text-align: end;
+}
+.prices__points {
+  border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+  margin: 0 5px 4px 5px;
+}
+
 body {
-  background: #E5E5E5;
+  background: #FFFFFF;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -885,13 +1147,76 @@ body {
   padding: 0 10px;
 }
 
-.index {
-  background: url("../../../img/PAGES/sign in/background.png") no-repeat 50%/cover;
-  padding: 172px 0;
-  height: 700px;
-}
 .index__container {
   position: relative;
+}
+
+.information-room {
+  margin: 70px 0 0 0;
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  grid-template-areas: "info info payment" "comments comments payment" "rules cancel payment";
+}
+
+.room-payment {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: payment;
+}
+
+.add-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
+}
+
+.user-comments {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: comments;
+}
+
+.list_rules {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: rules;
+  margin: 0 100px 0 0;
+}
+
+.cancel-info {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: cancel;
+}
+
+.info-card {
+  margin: 0 0 38px 0;
+}
+
+.add-info__header, .user-comments__header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+  margin: 0 0 23px 0;
+}
+
+.rev-comment {
+  margin: 0 0 22px 0;
+}
+
+.info-card:nth-child(4) .info-card__text:after {
+  content: "";
+  display: none;
+}
+
+.info-card:nth-child(4) {
+  margin: 0 0 30px 0;
 }
 
 @media (max-width: 655px) {
@@ -899,4 +1224,23 @@ body {
     padding: 10px 0 10% 0;
     height: auto;
   }
+}
+.cancel-info__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+.cancel-info__text {
+  display: flex;
+  margin: 0 0 10px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }

@@ -5,16 +5,20 @@ include ../../components/check-list/check-list
 div.filter-panel
 	div.filter-panel__stay
 		+field({
-			theme: "dropdown-width",
+			theme: "dropdown-date",
 			text: "даты пребывания в отеле",
 			value: "19 авг - 23 авг"
-		})
+			})
 	div.filter-panel__guests
 		+field({
 			theme: "dropdown-width",
 			text: "гости",
 			value: "3 гостя"
-		})
+			},
+			[{text: "взрослые", value: 1},
+			{text: "дети", value: 2},
+			{text: "младенцы", value: 4}]
+			)
 	div.filter-panel__range
 		include ../../components/price-range/price-range
 	div.filter-panel__capability

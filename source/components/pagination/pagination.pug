@@ -1,0 +1,11 @@
+mixin pagination({current, totalPages, totalRooms} = "")
+	div.pagination
+		div.pagination__pages
+			a(href= "#!").pagination__item.pagination__item_current= current
+			a(href= "#!").pagination__item= current + 1
+			a(href= "#!").pagination__item= current + 2
+			a(href= "#!").pagination__item.pagination__item_disabled= "..."
+			a(href= "#!").pagination__item= totalPages
+			a(href= "#!").pagination__item.pagination__item_arrow
+				img(src= "../../../img/INTERFACE/arrow_forward.svg")
+		span.pagination__text= `1 - 12 из ${totalRooms}+ вариантов аренды`

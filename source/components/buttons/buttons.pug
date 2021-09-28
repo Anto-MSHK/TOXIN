@@ -1,8 +1,10 @@
-mixin button({text, theme, href = "#"} = "")
+mixin button({text, score, theme, href = "#"} = "")
 	case theme
 		when "gradient"
 			form(action= href)
 				button(class = "but button-gradient")=text
+		when "button-like"
+			button(class = "but button-like")= score
 		when "frame"
 			form(action= href)
 				button(class = "but button-frame")=text

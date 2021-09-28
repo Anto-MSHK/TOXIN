@@ -1,0 +1,138 @@
+@import "../../components/null_style";
+@import "../../components/fonts";
+
+@import "../../components/header/header";
+@import "../../components/footer/footer";
+@import "../../components/buttons/buttons";
+@import "../../components/search-block/search-block";
+@import "../../components/field/field";
+@import "../../components/info-cards/info-cards";
+@import "../../components/rev-comment/rev-comment";
+@import "../../components/check-list/check-list";
+@import "../../components/photo-collage/photo-collage";
+@import "../../components/payment-receipt/payment-receipt";
+
+// @import "main.scss";
+
+// header - font-family: 'Montserrat';
+body{
+	background: #FFFFFF;
+}
+
+body.lock{
+	overflow: hidden;
+}
+
+.wrapper {
+	max-width: 1920px; //добавляем отступ 20px
+	// height: ;
+	overflow: hidden;
+	display:flex;
+	flex-direction:column;
+	margin: 0 auto;
+}
+
+.container{
+
+	max-width: 1180px; //добавляем отступ 20px
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.index{
+	&__container{
+		position: relative;
+	}
+}
+
+.information-room{
+	margin: 70px 0 0 0;
+	display: grid;
+	grid-template: 1fr 1fr/ 1fr 1fr;
+	grid-template-areas: "info info payment"
+								"comments comments payment"
+								"rules cancel payment";
+}
+
+.room-payment{
+	grid-area: payment;
+}
+
+.add-info{
+	grid-area: info;
+}
+
+.user-comments{
+	grid-area: comments;
+}
+
+.list_rules{
+	grid-area: rules;
+	margin: 0 100px 0 0;
+}
+
+.cancel-info{
+	grid-area: cancel;
+}
+
+.info-card{
+	margin: 0 0 38px 0;
+}
+
+	.add-info__header, .user-comments__header{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 19px;
+		line-height: 23px;
+
+		color: #1F2041;
+		margin: 0 0 23px 0;
+	}
+
+	.rev-comment{
+		margin: 0 0 22px 0;
+	}
+
+	.info-card:nth-child(4) .info-card__text:after{
+		content: '';
+		display:none;
+	}
+
+	.info-card:nth-child(4) {
+		margin: 0 0 30px 0;
+	}
+// Адаптив (на 655px)
+
+	@media (max-width: 655px){
+		.index{
+			padding:10px 0 10% 0;
+			height: auto;
+		}
+}
+
+.cancel-info__title{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 23px;
+
+	color: #1F2041;
+
+	// margin: 0 0 0 20px;
+}
+
+.cancel-info__text{
+	display: flex;
+	margin: 0 0 10px 0;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+
+	color: rgba(31, 32, 65, 0.75);
+}
+

@@ -1,0 +1,6 @@
+mixin info-card({image, heading, text} = "")
+	div.info-card
+		img.info-card__icon(src= image)
+		div.info-card__content
+			span.info-card__heading= heading
+			span.info-card__text= text

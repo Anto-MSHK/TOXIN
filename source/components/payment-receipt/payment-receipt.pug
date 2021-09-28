@@ -1,0 +1,47 @@
+div.payment
+	div.payment__container
+		div.payment__body
+			div.info-payment
+				div.info-payment__title
+					div.info-payment__number
+						span.info-payment__number-ico №
+						span(class = "info-payment__number-num") 888
+							span.info-payment__lux ЛЮКС
+					div.info-payment__price
+						span.info-payment__price-text 9 990₽
+						|  в сутки
+				div.info-payment__calendar
+					div.info-payment__arrial 
+						+field({
+							theme: "dropdown-width",
+							text: "Прибытие",
+							value: "ДД.ММ.ГГГГ"
+						})
+					div.info-payment__departure
+						+field({
+							theme: "dropdown-width",
+							text: "Прибытие",
+							value: "ДД.ММ.ГГГГ"
+						})
+				div.info-payment__guests
+					+field({
+						theme: "dropdown-width",
+						text: "Гости",
+						value: "Сколько гостей"
+					})
+				ul.prices
+					li.prices__basic
+						span.prices__basic-text 9 990₽ х 4 суток
+						span.prices__basic-count 39 960₽
+					li.prices__services
+						span.prices__services-text Сбор за услуги: скидка 2 179₽
+						span.prices__services-count 0₽
+					li.prices__services-plus
+						span.prices__services-plus-text Сбор за дополнительные услуги
+						span.prices__services-plus-count 300₽
+					li.prices__total
+						div.prices__total-text Итого
+						div.prices__points
+						div.prices__total-price 38 081₽
+			div.payment__button
+				+button({text: "Забронировать", theme: "arrow", href: "../search/search.html"})

@@ -1,11 +1,32 @@
-mixin field({theme, text, classname, value, placefolder, href} = "")
+mixin field({theme, text, classname, value, placefolder, href} = "", items = [])
 	case theme
+		when "dropdown-date"
+			div.field
+				div.field__title= text
+				div.field__value
+					label(class="field__label")
+					div.field__input.field__input-sub
+						span= value
 		when "dropdown-width"
 			div.field
-				label(class="field__label")
 				div.field__title= text
-				div.field__input.field__input-sub
-					span= value
+				div.field__value
+					label(class="field__label")
+					div.field__input.field__input-sub
+						span= value
+					div.field__sub
+						ul
+							each item in items
+								li.field__item.item-field
+									span.item-field__text= item.text
+									div.item-field__custom
+										div.item-field__minus -
+										span.item-field__value= item.value
+										div.item-field__plus +
+						div.field__oper-btn
+							span.field__btn-clear очистить
+							span.field__btn-apply применить
+
 				//- input.field__input(value=value autocomplete="off" placeholder=placeholder name=name type=type)
 		when "dropdown-normal"
 			div.field

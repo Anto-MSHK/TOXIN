@@ -1,0 +1,50 @@
+.rev-comment {
+	display: flex;
+
+	&__info-piople {
+		display: flex;
+		flex-direction:column;
+		margin: 0 10px 0 0;
+	}
+	&__icon {
+		width: 48px;
+		height: 48px;
+		border: 1px solid white;
+		border-radius: 50%;
+	}
+	&__name {
+		
+
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 24px;
+
+		color: rgba(31, 32, 65, 0.75);
+	}
+	&__status {
+		font-weight: initial;
+	}
+
+	&__lake-text{
+
+		display: flex;
+		flex-direction:column;
+	}
+
+	&__text{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		margin: 6px 0 0 0;
+
+		color: rgba(31, 32, 65, 0.75);
+	}
+}
+
+.rev-comment button{
+	margin: 10px auto;
+}

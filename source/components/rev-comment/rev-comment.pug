@@ -1,0 +1,12 @@
+include ../buttons/buttons
+
+mixin rev-comment({image, name, status, text, likes} = "")
+	div.rev-comment
+		div.rev-comment__info-piople
+			img.rev-comment__icon(src= image)
+			+button({theme: "button-like", score: [likes]})
+		div.rev-comment__lake-text
+			div.rev-comment__name= name
+				div.rev-comment__status= status
+			div.rev-comment__text= text
+
